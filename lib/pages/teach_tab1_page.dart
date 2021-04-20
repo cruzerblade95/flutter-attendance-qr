@@ -67,7 +67,7 @@ class _TeacherBasicPageState extends State<TeacherBasicPage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          resizeToAvoidBottomPadding: false,
+          resizeToAvoidBottomInset: false,
           body: SingleChildScrollView(
             /*ConstrainedBox(
             constraints: new BoxConstraints(

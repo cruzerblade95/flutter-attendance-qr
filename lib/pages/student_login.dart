@@ -44,8 +44,11 @@ class _StudentLoginState extends State<StudentLogin> {
         var result =
             await Firestore.instance.collection('users').document(userId).get();
         print(result['role']);
-        if (result['role'] == "Teacher")
+        if (result['role'] == "Teacher") {
+          await widget.auth.signOut();
           throw Exception("Only Students can login");
+        }
+
         print('Signed in: $userId');
         setState(() {
           _isLoading = false;

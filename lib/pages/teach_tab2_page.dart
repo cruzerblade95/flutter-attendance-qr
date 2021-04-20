@@ -59,7 +59,7 @@ class _TeacherBasicSecPageState extends State<TeacherBasicSecPage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          resizeToAvoidBottomPadding: false,
+          resizeToAvoidBottomInset: false,
           body: SingleChildScrollView(
             child: Center(
               child: Column(

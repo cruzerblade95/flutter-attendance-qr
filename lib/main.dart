@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
             elevation: 0.0,
             backgroundColor: Colors.pink,
             title: Text(
-              "Smart Attendance",
+              "Student Attendance System",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
